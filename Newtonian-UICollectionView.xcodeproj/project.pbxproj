@@ -14,6 +14,14 @@
 		5EB0A2CE17B924E800708DD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0A2CD17B924E800708DD3 /* main.m */; };
 		5EB0A2D217B924E800708DD3 /* ASHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0A2D117B924E800708DD3 /* ASHAppDelegate.m */; };
 		5EB0A2D417B924E800708DD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB0A2D317B924E800708DD3 /* Images.xcassets */; };
+		5EB0A2F217B92ACB00708DD3 /* ASHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0A2F117B92ACB00708DD3 /* ASHCollectionViewController.m */; };
+		5EB0A2F517B92B0800708DD3 /* ASHNewtonianCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0A2F417B92B0800708DD3 /* ASHNewtonianCollectionViewLayout.m */; };
+		5EB0A2F817B92C5A00708DD3 /* ASHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0A2F717B92C5A00708DD3 /* ASHCollectionViewCell.m */; };
+		5EB0A2FB17B92D5F00708DD3 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB0A2FA17B92D5F00708DD3 /* 1.jpg */; };
+		5EB0A2FD17B92D6B00708DD3 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB0A2FC17B92D6B00708DD3 /* 0.jpg */; };
+		5EB0A2FF17B92D7900708DD3 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB0A2FE17B92D7900708DD3 /* 2.jpg */; };
+		5EB0A30117B92D8200708DD3 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB0A30017B92D8200708DD3 /* 3.jpg */; };
+		5EB0A30317B92DA000708DD3 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB0A30217B92DA000708DD3 /* 4.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +37,17 @@
 		5EB0A2D117B924E800708DD3 /* ASHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASHAppDelegate.m; sourceTree = "<group>"; };
 		5EB0A2D317B924E800708DD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5EB0A2DA17B924E800708DD3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5EB0A2F017B92ACB00708DD3 /* ASHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHCollectionViewController.h; sourceTree = "<group>"; };
+		5EB0A2F117B92ACB00708DD3 /* ASHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHCollectionViewController.m; sourceTree = "<group>"; };
+		5EB0A2F317B92B0800708DD3 /* ASHNewtonianCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHNewtonianCollectionViewLayout.h; sourceTree = "<group>"; };
+		5EB0A2F417B92B0800708DD3 /* ASHNewtonianCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHNewtonianCollectionViewLayout.m; sourceTree = "<group>"; };
+		5EB0A2F617B92C5A00708DD3 /* ASHCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHCollectionViewCell.h; sourceTree = "<group>"; };
+		5EB0A2F717B92C5A00708DD3 /* ASHCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHCollectionViewCell.m; sourceTree = "<group>"; };
+		5EB0A2FA17B92D5F00708DD3 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		5EB0A2FC17B92D6B00708DD3 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		5EB0A2FE17B92D7900708DD3 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		5EB0A30017B92D8200708DD3 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		5EB0A30217B92DA000708DD3 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +67,7 @@
 		5EB0A2B517B924E800708DD3 = {
 			isa = PBXGroup;
 			children = (
+				5EB0A2F917B92D4500708DD3 /* Images */,
 				5EB0A2C717B924E800708DD3 /* Newtonian-UICollectionView */,
 				5EB0A2C017B924E800708DD3 /* Frameworks */,
 				5EB0A2BF17B924E800708DD3 /* Products */,
@@ -78,6 +98,12 @@
 			children = (
 				5EB0A2D017B924E800708DD3 /* ASHAppDelegate.h */,
 				5EB0A2D117B924E800708DD3 /* ASHAppDelegate.m */,
+				5EB0A2F017B92ACB00708DD3 /* ASHCollectionViewController.h */,
+				5EB0A2F117B92ACB00708DD3 /* ASHCollectionViewController.m */,
+				5EB0A2F317B92B0800708DD3 /* ASHNewtonianCollectionViewLayout.h */,
+				5EB0A2F417B92B0800708DD3 /* ASHNewtonianCollectionViewLayout.m */,
+				5EB0A2F617B92C5A00708DD3 /* ASHCollectionViewCell.h */,
+				5EB0A2F717B92C5A00708DD3 /* ASHCollectionViewCell.m */,
 				5EB0A2D317B924E800708DD3 /* Images.xcassets */,
 				5EB0A2C817B924E800708DD3 /* Supporting Files */,
 			);
@@ -93,6 +119,18 @@
 				5EB0A2CF17B924E800708DD3 /* Newtonian-UICollectionView-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EB0A2F917B92D4500708DD3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5EB0A2FC17B92D6B00708DD3 /* 0.jpg */,
+				5EB0A2FA17B92D5F00708DD3 /* 1.jpg */,
+				5EB0A2FE17B92D7900708DD3 /* 2.jpg */,
+				5EB0A30017B92D8200708DD3 /* 3.jpg */,
+				5EB0A30217B92DA000708DD3 /* 4.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +186,11 @@
 			files = (
 				5EB0A2CC17B924E800708DD3 /* InfoPlist.strings in Resources */,
 				5EB0A2D417B924E800708DD3 /* Images.xcassets in Resources */,
+				5EB0A30117B92D8200708DD3 /* 3.jpg in Resources */,
+				5EB0A2FF17B92D7900708DD3 /* 2.jpg in Resources */,
+				5EB0A30317B92DA000708DD3 /* 4.jpg in Resources */,
+				5EB0A2FB17B92D5F00708DD3 /* 1.jpg in Resources */,
+				5EB0A2FD17B92D6B00708DD3 /* 0.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +202,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EB0A2CE17B924E800708DD3 /* main.m in Sources */,
+				5EB0A2F517B92B0800708DD3 /* ASHNewtonianCollectionViewLayout.m in Sources */,
 				5EB0A2D217B924E800708DD3 /* ASHAppDelegate.m in Sources */,
+				5EB0A2F817B92C5A00708DD3 /* ASHCollectionViewCell.m in Sources */,
+				5EB0A2F217B92ACB00708DD3 /* ASHCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
