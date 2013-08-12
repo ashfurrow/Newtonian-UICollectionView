@@ -52,9 +52,9 @@ static NSString *CellIdentifier = @"Cell";
     self.navigationItem.leftBarButtonItem.enabled = NO;
     self.navigationItem.rightBarButtonItem.enabled = NO;
     [layout detachItemAtIndexPath:[NSIndexPath indexPathForItem:self.count-1 inSection:0] completion:^{
+        self.count--;
         self.navigationItem.leftBarButtonItem.enabled = self.count > 0;
         self.navigationItem.rightBarButtonItem.enabled = self.count < 10;
-        self.count--;
     }];
 }
 
