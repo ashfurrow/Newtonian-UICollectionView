@@ -22,6 +22,8 @@
     if (self) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
         imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        imageView.clipsToBounds = YES;
         [self.contentView addSubview:imageView];
         self.imageView = imageView;
     }
