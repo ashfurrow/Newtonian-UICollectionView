@@ -9,6 +9,8 @@
 #import "ASHCollectionViewController.h"
 #import "ASHCollectionViewCell.h"
 
+#import "ASHNewtonianCollectionViewLayout.h"
+
 @interface ASHCollectionViewController ()
 
 @property (nonatomic, assign) NSInteger count;
@@ -26,9 +28,8 @@ static NSString *CellIdentifier = @"Cell";
     [super viewDidLoad];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(userDidPressTrashButton:)];
+    self.navigationItem.leftBarButtonItem.enabled = NO;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(userDidPressAddButton:)];
-    
-    self.count = 5;
     
     [self.collectionView registerClass:[ASHCollectionViewCell class] forCellWithReuseIdentifier:CellIdentifier];
 }
@@ -39,17 +40,22 @@ static NSString *CellIdentifier = @"Cell";
     [self.collectionView performBatchUpdates:^{
         [self.collectionView insertItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:self.count inSection:0]]];
         self.count++;
+        self.navigationItem.rightBarButtonItem.enabled = self.count < 10;
+        self.navigationItem.leftBarButtonItem.enabled = YES;
     } completion:nil];
 }
 
 -(void)userDidPressTrashButton:(id)sender {
-    [self.collectionView performBatchUpdates:^{
-        // Prevent count from going below zero.
-        if (self.count > 0) {
-            [self.collectionView deleteItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:self.count-1 inSection:0]]];
-            self.count--;
-        }
-    } completion:nil];
+    ASHNewtonianCollectionViewLayout *layout = (ASHNewtonianCollectionViewLayout *)self.collectionViewLayout;
+    
+    // We have to prevent the user from modifying the contents until we've completed the deletion operation
+    self.navigationItem.leftBarButtonItem.enabled = NO;
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+    [layout detachItemAtIndexPath:[NSIndexPath indexPathForItem:self.count-1 inSection:0] completion:^{
+        self.navigationItem.leftBarButtonItem.enabled = self.count > 0;
+        self.navigationItem.rightBarButtonItem.enabled = self.count < 10;
+        self.count--;
+    }];
 }
 
 #pragma mark - UICollectionViewDataSource methods

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASHNewtonianCollectionViewLayout : UICollectionViewFlowLayout
+@interface ASHNewtonianCollectionViewLayout : UICollectionViewLayout
+
+-(void)detachItemAtIndexPath:(NSIndexPath *)indexPath completion:(void (^)(void))completion;
 
 @end

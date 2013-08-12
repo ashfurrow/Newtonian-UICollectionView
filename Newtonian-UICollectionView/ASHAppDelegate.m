@@ -16,7 +16,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor blackColor];
+    self.window.backgroundColor = [UIColor greenColor];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ASHCollectionViewController alloc] initWithCollectionViewLayout:[[ASHNewtonianCollectionViewLayout alloc] init]]];
     [self.window makeKeyAndVisible];
     return YES;
